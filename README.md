@@ -10,6 +10,7 @@ Previo a iniciar el desarrollo de software para web usando el framework de NodeJ
 |--|--|--|
 |1.|Metodología de Evaluación| ✅Finalizado|
 |2.|Inicialización del Proyecto de Fundamentos de Js| Activa|
+|2.|Ejercicio 01: Declaración de Variables en JS| Activa|
 
 
 ### Autor
