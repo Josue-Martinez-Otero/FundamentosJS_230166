@@ -43,7 +43,7 @@ let miColorFavorito;
 console.warn("--- Declaración de Variable Locales usando: LEFT")
 console.log("Genial, te voy conociendo mejor, ahora sé que tu naciste el:", miFechaNacimiento," y tu colorFavorito es: mmmmmmmmmm dejame pensar .....")
 miColorFavorito="Naranja";
-console.log("Creo que es $(miColorFavorito), le atine?") // La manera de mezclar texto fijos con el valor actual de las variables se le conoce como: interpletación y deben iniciar y finalizar en un backtic - tilde inversa
+console.log("Creo que es ${miColorFavorito}, le atine?") // La manera de mezclar texto fijos con el valor actual de las variables se le conoce como: interpletación y deben iniciar y finalizar en un backtic - tilde inversa
 console.log("Analizando los datos puedo deducir que:");
 console.log("miColorFavorito es del tipo:", typeof(miColorFavorito))
 console.log("miFechaNacimiento es del tipo:", typeof(miFechaNacimiento))
