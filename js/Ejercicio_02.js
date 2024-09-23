@@ -76,6 +76,7 @@ console.log(`Más adelante podremos transformar el contenido de los STRING usand
 console.log(`O en su defecto a minúsculas: ${producto} => ${producto.toLowerCase()}`);
 
 // 5. BIGINT (Número de Mayor Amplitud)
+console.warn("---Tipo de Dato - BIGINT (Número Amplio)");
 const numeroGrande = 1234567890
 const numeroGrande2 = 12345678901234567890
 let numeroGrande3 = 123456789012345678901234567890
@@ -209,6 +210,16 @@ let fecha_ultimoPost;
 nombreUsuario = "marco.ram@gmail.com";
 passUsuario = "pass123";
 
+// en este momento de ejecución del sistema no sabemos su género , ni su estatus de relación sentimental.
+
+console.log(`El usuario: ${nombreUsuario} esta intentado logearse con una contraseña de: ${passUsuario}`);
+
+// Lo que prosigue es que el sistema contejara los datos ingresados con la base de datos y en caso de que los datos sean correctos comenzará la sesión en la plataforma actualizando estos valores.
+
+// Dado que Marco es del genero Másculino, y denota que su estatus de relación no ha sido capturado o lo mantiene privado esto generar la actualización de los valores de las variables
+generoUsuario="M"
+estatusRelacionSentimental=null
+
 console.log(`El usuario: ${nombreUsuario}, se ha logeado exitosamente, al tener acceso a su información de perfil podemos deducir que es del género ${generoUsuario} y que su estatus de relación es: ${estatusRelacionSentimental} y su última publicación la realizó el: ${fecha_ultimoPost}`);
 
 // Comparando NULL vs UNDEFINED
@@ -229,5 +240,17 @@ console.log(
     "Las variables  tienen el mismo valor, pero no el mismo tipo de dato"
 );
 
+
+// 8. FUNCTION (Funciones)
+console.warn("--- Tipo de Dato FUNCTION (Función)")
+
+// Declaramos una funcion que nos permita recibir un paramento en este caso el nombre de la persona a saludar, y le enviamos un saludo, esta función la asignamos a una constante.
+const saludar =  function(nombre){return `Hola, ${nombre}!`}
+
+// Invocamos a la función declarada
+console.log(saludar('Marco'));
+
+//Y que tipo de dato tiene esta constante
+console.log(`El tipo de dato de la constante saludar es: ${typeof(saludar)}`)
 
 
