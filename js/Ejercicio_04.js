@@ -40,7 +40,7 @@ console.log(`¿Qué tipo de dato es un arreglo? ${typeof(mesesAnio)}`)
 console.log("Declarar un arreglo mixto")
 const saludar= function(nombre){return `Hola, ${nombre}!`}
 
-let arregloMixto=["String", 9, 45.26,-200,-.16853,Symbol("TANIA"), 'z', false, BigInt(1111112222222333334444444555566666777), true, {latitud:"20°18'0\" N" , longitud: "97°58'00\" W" , altitud:796}, saludar, null]
+let arregloMixto=["String", 9, 45.26,-200,-.16853,Symbol("Josue"), 'z', false, BigInt(1111112222222333334444444555566666777), true, {latitud:"20°18'0\" N" , longitud: "97°58'00\" W" , altitud:796}, saludar, null]
 
 console.log(arregloMixto)
 console.table(arregloMixto)
