@@ -132,4 +132,74 @@ arregloMixto.push("Hola");
 console.log("Y tambien agregamos el numero -3128817875487448415.23597519964, siendo este un BigInt")
 arregloMixto.push(BigInt(-3128817875487448415.23597519964));
 console.log("Después de esta dos operaciones el arreglo queda con los siguientes elemento:")
-console.table(arregloMixto)
+console.table(arregloMixto);
+
+console.log("%c6.- Agregar un nuevo elemento a un arreglo (UNSHIFT) en la posición inicial", style_console);
+console.log(estudiantes)
+console.table(estudiantes)
+console.log("Ahora agregamos a Abishai Flores, al comienzo del arreglo.")
+estudiantes.unshift("Abishai Flores")
+console.log("La lista actual es:")
+console.table(estudiantes)
+
+console.log("%c7.- Eliminar el elemento de un arreglo en la posición (POP)", style_console);
+console.log("El arreglo tiene los siguientes elementos:")
+console.table(estudiantes)
+console.log("Para este caso eliminaremos a Abril Guzman, en la última posición.")
+estudiantes.pop();
+console.log("Después de eliminar el elemento el arreglo quedo de la siguiente manera:")
+console.table(estudiantes);
+
+console.log("%c8.- Eliminar el elemento de un arreglo en la primera posición (SHIFT)", style_console);
+console.log("El arreglo tiene los siguientes elementos:")
+console.table(estudiantes)
+console.log("Para este caso eliminaremos a Abishai Flores, en la última posición.")
+estudiantes.shift();
+console.log("Después de eliminar el elemento el arreglo quedo de la siguiente manera:")
+console.table(estudiantes);
+
+console.log("%c9.- Modificar un arreglo en un arreglo nuevo con posiciones definidas (SPLICIE))", style_console);
+console.log("El arreglo original tiene los elementos: ")
+console.table(estudiantes)
+console.log("Dividir el arreglo en uno nuevo eliminando ciertos elementos en base a su posición")
+//Cuando la función splice recibe un solo parámetro elimara los elementos de esa posición en adelante 
+estudiantes.splice(2)
+console.table(estudiantes);
+
+//Cuando la función soplice recibe dos parámetros elimina todos los elementos que no estén en ese rango
+estudiantes.push("Zyanya Zacatenco");
+estudiantes.push("Tania Ibarra");
+estudiantes.push("Juvenal Viveros");
+estudiantes.push("Marcos Ríos");
+estudiantes.push("Jonathan Baldemar");
+console.log("Se han agregado 5 nuevos estudiantes, por lo que el arreglo es:")
+console.table(estudiantes);
+console.log("Ahora ya tenemos los elementos suficientes para aplicar el método splice con dos parámetros que serán 3,5")
+estudiantes.splice(3,5)
+console.log("Resultando en:")
+console.table(estudiantes);
+// Splice sirve tambien para insertar elementos en posiciones especificas, ahora anecesitamos Insertar a : "Antonio Ocpaco" entre "Angel Rufino", "Idai Vargas"
+console.log("Ahora vamos a insertar a \"Antonio Ocpaco\" en los elementos de la posición 0 y 1.")
+estudiantes.splice(1,0, "Antonio Ocpaco")
+console.log("Resultado de:")
+console.table(estudiantes);
+
+// Tambien splice sirve para reemplazar elementos por otros, en este caso remplazaremos a "Angel Rufino" por "Brandon León"
+
+console.log("Ahora vamos a remplazar al elemento \"Angel Rufino\" en los elementos de la posición por \"Brandon León\"")
+estudiantes.splice(0,1, "Brandon León")
+console.log("Resultado de:")
+console.table(estudiantes);
+
+console.log("%c10.- Métodos para la maniúlación de Arreglos INMUTABLES", style_console)
+let signosZodiacales = ["Aries","Tauro","Geminis","Cáncer","Leo","Virgo","Libra","Escorpio","Sagitario","Capricornio", "Acuario", "Piscis"]
+
+//Destructuración de Arreglos 
+let [signo1,,signo3,,,,signo7,,,,] = signosZodiacales
+console.log(`El primer signo zodiacal es: ${signo1}`)
+console.log(`El tecer signo zodiacal es: ${signo3}`)
+//console.log(`El cuarto signo zodiacal es: ${signo4}`)
+console.log(`El séptimo signo zodiacal es: ${signo7}`)
+
+//Congelamos el arreglo volviendolo INMUTABLE;
+Object.freeze(signosZodiacales);
