@@ -115,3 +115,21 @@ console.log("Y para las irregulares?")
 let numeroFilas = matrizIrregular.length
 for (let i = 0;i<numeroFilas; i++)
 console.log(`La longitud de la fila ${[i]} es = ${matrizIrregular[i].length}`)
+
+console.log("%c5.- Agregar un nuevo elemento a un arreglo (PUSH)", style_console);
+let estudiantes = ["Angel Rufino", "Idai Vargas", "Daniel Bravo", "Esther Gonzalez", "Ailton Artiaga"]
+console.log("Los elementos actuales del arreglo son: ")
+console.table(estudiantes)
+console.log("Agregamos a un nuevo estudiante llamado: Abril Guzman")
+estudiantes.push("Abril Guzman")
+console.log("Después de agregarla los elementos del arreglo son:")
+console.table(estudiantes)
+console.log("¿Que pasa con los Mixtos?")
+console.log("El arregloMixto actualmente tiene los siguientes elementos:")
+console.table(arregloMixto)
+console.log("Agregamos la palabra: \"Hola\", como nuevo elemento")
+arregloMixto.push("Hola");
+console.log("Y tambien agregamos el numero -3128817875487448415.23597519964, siendo este un BigInt")
+arregloMixto.push(BigInt(-3128817875487448415.23597519964));
+console.log("Después de esta dos operaciones el arreglo queda con los siguientes elemento:")
+console.table(arregloMixto)
