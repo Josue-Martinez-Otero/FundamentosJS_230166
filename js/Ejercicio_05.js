@@ -193,3 +193,68 @@ if(fechaActual >= inicioPrimavera && fechaActual< inicioVerano)
             continue;
         console.log(num);
         }
+
+        console.log("%c6.- Ciclo Iterativo - (FOR)", style_console);
+
+        // Recorre de manera iterativa (i), de incremental o decremental
+        console.log("Los días de la semana son en orden ascendente son:")
+        let dias = ["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado"]
+
+        for(let i=0;i<dias.length;i++)
+            console.log(dias[i])
+
+        console.log("Ahora vamos a imprimir los meses en orden descendente...")
+        const meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
+        for(let i=11;i>=0;i--)
+            console.log(meses[i]);
+
+        console.log("%c7.- Ciclos Condicionales - (WHILE)", style_console);
+        //Estos ciclos  (BUCLE) dependen de una condición para continuar ejecutandose
+
+        let finDeSemana = false;
+        let mensaje="";
+        let j=0;
+        while(j<dias.length)
+            {
+                
+                switch(j)
+                { // Usamos `j` para que coincida con el índice
+                    case 0:
+                        finDeSemana = true;
+                        mensaje = "Domingoooooooo.. ZzzzZzzzZzz"
+                        break;
+                    case 1:
+                        finDeSemana= false;
+                        mensaje = "Lunes de Trabajar"
+                        break;
+                    case 2:
+                        finDeSemana= false;
+                        mensaje = "Martes se sigue chambeando"
+                        break; 
+                    case 3:
+                        finDeSemana= false;
+                        mensaje = "Miercoles mitad de semana"
+                        break;  
+                    case 4:
+                        finDeSemana= false;
+                        mensaje = "Jueves de Racismo 🙌"
+                        break;
+                    case 5:
+                        finDeSemana= false;
+                        mensaje = "Viernes se acaba la chamba"
+                        break;                                
+                    case 6:
+                        finDeSemana= true;
+                        mensaje = "Sabado día de hechar weba"
+                        break;              
+                }
+
+                // Imprimir el nombre del día y su mensaje
+                if(finDeSemana){
+                console.log(`Día: ${dias[j]}`)
+                console.log(`Mensaje del Día: ${mensaje}`)
+                   
+                }
+                j++
+             
+            }
