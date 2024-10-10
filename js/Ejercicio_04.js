@@ -245,13 +245,13 @@ function filtarPrimeros5(estudiante)
 }
 
 //filtrado de Datos
-console.log("c%c12.- Filtrado de Elemento dentro de un arreglo utilizando el método MAP, en el que necesitamos transformarlos", style_console);
+console.log("%c12.- Filtrado de Elemento dentro de un arreglo utilizando el método MAP, en el que necesitamos transformarlos", style_console);
 console.log("Imprimimos los elementos actuales de signoZodiacales")
 console.table(signosZodiacales);
 // Que podemos hacer si necesitamos el mismo arreglo pero ahora con todos sus elementos con letras MAYUSCULAS
 console.table(signosZodiacales.map(signoZodiacal=>signoZodiacal.toUpperCase()));
 
-console.log("c%c13.- Reduce un Arreglo", style_console)
+console.log("%c13.- Reduce un Arreglo", style_console)
 // Reducción de elementos de un arreglo, se usa cuando debemos hacer operaciones matemáticas o cuantitativas a un arreglo, como obtener totales, la idea es reducir la lista a un valor más simplificado.
 const costosListaCompras = [15,52.50,16.90,32.50,28,105,45.2,94.10]
 //Como podemos calcular el total de una lista de un carrito de compras
